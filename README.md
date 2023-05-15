@@ -7,7 +7,7 @@ DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 # Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
 - Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
-- Make sure to download the IDE corresponding with your operating system.
+- Make sure to download the IDE corresponding with your operating system.<br />
 ![](images/SOP_1.png) 
 Figure 1 – Arduino Website
 
