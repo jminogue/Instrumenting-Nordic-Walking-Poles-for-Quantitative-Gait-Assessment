@@ -37,20 +37,20 @@ Figure 5 – Downloading the board module for the esp32<br />
 Figure 6 – Selecting the ESP32 from Boards Manager <br /> 
 
 # Step 4: Ensure that the Arduino IDE can find the ESP32
-•	You may now connect the esp32 to your computer after you read the following warning
-o	WARNING: Do not connect the esp32 to your computer if it is also connected to a battery! This can fatally harm your computer. Disconnect the battery from the esp32 before connecting to your computer. 
-•	From the sketch screen of the Arduino IDE, select the “Select Board” drop-down and select “Select other board and port…”
- 
-Figure 6 – Select Board
-•	Enter esp32-wroom in the search bar to find our board, then select the port that it is connected to on your computer
-o	Note: The esp32 must be connected to the computer using a micro-USB cable. 
- 
-Figure 7 – Selecting board and port
-•	If no ports are shown, your computer may not be recognizing the esp32. To check this, navigate to your device manager and see if there is a device under “other devices” with a yellow warning icon on it. If this is the case, you need to download an additional driver found here. 
-o	Download the latest zipped driver to your computer and extract it to your desktop so it’s easy to find.
-o	Right click on the device in “other devices” in your device manager and select “update driver.”
-o	Allow your computer to automatically find the driver or manually navigate to it on your desktop.
-o	Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
+- You may now connect the esp32 to your computer after you read the following warning
+- WARNING: Do not connect the esp32 to your computer if it is also connected to a battery! This can fatally harm your computer. Disconnect the battery from the esp32 before connecting to your computer. 
+- From the sketch screen of the Arduino IDE, select the “Select Board” drop-down and select “Select other board and port…” (Figure 7)<br /><br /> 
+<img src= "Images/SOP_7.png" width = "500"> <br />
+Figure 7 – Select Board<br /><br /> 
+- Enter esp32-wroom in the search bar to find our board, then select the port that it is connected to on your computer
+- Note: The esp32 must be connected to the computer using a micro-USB cable.<br /> <br />
+<img src= "Images/SOP_8.png" width = "500"> <br />
+Figure 8 – Selecting board and port<br /><br />
+- If no ports are shown, your computer may not be recognizing the esp32. To check this, navigate to your device manager and see if there is a device under “other devices” with a yellow warning icon on it. If this is the case, you need to download an additional driver found here (https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads). 
+  - Download the latest zipped driver to your computer and extract it to your desktop so it’s easy to find.
+  - Right click on the device in “other devices” in your device manager and select “update driver.”
+  - Allow your computer to automatically find the driver or manually navigate to it on your desktop.
+  - Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
 
 # Step 5: Upload Arduino Code to the esp32
 •	Open the WalkingStick_ESP_BT code in the Arduino IDE
