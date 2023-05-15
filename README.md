@@ -12,19 +12,18 @@ An IDE is an Integrated Development Environment. This is basically the applicati
 Figure 1 – Arduino Website
 
 # Step 2: Input Board Manager URL in Arduino IDE
-This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found here. In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board. 
-•	In the Arduino IDE, go to File -> Preferences.
+This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found here (https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/). In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board.<br />
+- In the Arduino IDE, go to File -> Preferences.<br />
  
-•	In the “Additional boards manager URLs” text box (Figure 2), paste in the following link:
+- In the “Additional boards manager URLs” text box (Figure 2), paste in the following link:
  https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-o	If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).<br />
+- If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).<br />
 
-![](Images/SOP_2.png) <br />
-Figure 2 – Arduino IDE Preferences
+Figure 2 – Arduino IDE Preferences <br />
 
  
-Figure 3 – Adding multiple board manager URLs
-•	Press OK when you are finished. 
+Figure 3 – Adding multiple board manager URLs <br />
+- Press OK when you are finished. 
 
 # Step 3: Install Board Manager for ESP32
 •	Select the “tools” tab on the top toolbar of the Arduino IDE and navigate to “Board” -> “Boards Manager” (Figure 4).
