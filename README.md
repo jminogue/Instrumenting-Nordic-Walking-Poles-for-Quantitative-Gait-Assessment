@@ -7,8 +7,8 @@ DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 # Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
 - Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
-- Make sure to download the IDE corresponding with your operating system.<br />
-![](images/SOP_1.png) 
+- Make sure to download the IDE corresponding with your operating system.<br /><br />
+![](Images/SOP_1.png) <br />
 Figure 1 – Arduino Website
 
 # Step 2: Input Board Manager URL in Arduino IDE
@@ -17,8 +17,9 @@ This project uses a microcontroller called the ESP32-WROOM-DA Module. We have de
  
 •	In the “Additional boards manager URLs” text box (Figure 2), paste in the following link:
  https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-o	If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).
- 
+o	If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).<br />
+
+![](Images/SOP_2.png) <br />
 Figure 2 – Arduino IDE Preferences
 
  
