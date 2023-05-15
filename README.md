@@ -8,7 +8,7 @@ DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
 - Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
 - Make sure to download the IDE corresponding with your operating system.<br /><br />
-![](Images/SOP_1.png) <br />
+<img src= "Images/SOP_1.png" width = "500"> <br />
 Figure 1 – Arduino Website
 
 # Step 2: Input Board Manager URL in Arduino IDE
@@ -17,24 +17,24 @@ This project uses a microcontroller called the ESP32-WROOM-DA Module. We have de
  
 - In the “Additional boards manager URLs” text box (Figure 2), paste in the following link:
  https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-- If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).<br />
-
-Figure 2 – Arduino IDE Preferences <br />
-
- 
+- If there is already a link in this box, or if you would like to add more than one link, select the icon to the right of the text box, and then separate your links by line (Figure 3).<br /> <br />
+<img src= "Images/SOP_2.png" width = "500"> <br />
+Figure 2 – Arduino IDE Preferences <br /> <br />
+<img src= "Images/SOP_3.png" width = "500"> <br />
 Figure 3 – Adding multiple board manager URLs <br />
 - Press OK when you are finished. 
 
 # Step 3: Install Board Manager for ESP32
-•	Select the “tools” tab on the top toolbar of the Arduino IDE and navigate to “Board” -> “Boards Manager” (Figure 4).
- 
-Figure 4 – Navigating to “Boards Manager”
+- Select the “tools” tab on the top toolbar of the Arduino IDE and navigate to “Board” -> “Boards Manager” (Figure 4).<br /> <br />
+<img src= "Images/SOP_4.png" width = "500"> <br />
+Figure 4 – Navigating to “Boards Manager”<br /> 
 
-•	In the boards manager search bar, search esp32 and install the module from “Espressif Systems” (Figure 5).
- 
-Figure 5 – Downloading the board module for the esp32
-•	At this point, you should be able to navigate back to your boards and find the ESP-32-WROOM-DA Module, which you should now select (Figure 6). 
- 
+- In the boards manager search bar, search esp32 and install the module from “Espressif Systems” (Figure 5).<br /><br /> 
+<img src= "Images/SOP_5.png" width = "500"> <br />
+Figure 5 – Downloading the board module for the esp32<br /> 
+- At this point, you should be able to navigate back to your boards and find the ESP-32-WROOM-DA Module, which you should now select (Figure 6). <br /> <br /> 
+<img src= "Images/SOP_6.png" width = "500"> <br />
+Figure 6 – Selecting the ESP32 from Boards Manager <br /> 
 
 # Step 4: Ensure that the Arduino IDE can find the ESP32
 •	You may now connect the esp32 to your computer after you read the following warning
