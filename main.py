@@ -2,12 +2,7 @@ import wx
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
 from matplotlib.figure import Figure
 import numpy as np
-import serial
-from tkinter import * #import EVERYTHING from tkinter library
 import csv #import CSV capabilities
-from itertools import zip_longest
-import serial.tools.list_ports
-#from bluetooth import BluetoothSocket, RFCOMM
 import bluetooth
 
  
@@ -48,18 +43,6 @@ class BottomPanel(wx.Panel):
         self.buttonSend = wx.Button(self, -1, "Send", pos = (295, 115), size = (50, -1))
         self.buttonSend.Bind(wx.EVT_BUTTON, self.OnSend)
  
-        # allows the user to zoom in on the graph by setting a range on the y axis
-        labelRange = wx.StaticText(self, -1, "Zoom in On Data", pos = (450, 10))
-        labelMinY = wx.StaticText(self, -1, "Min Y", pos = (450, 30))
-        self.textboxMinYAxis = wx.TextCtrl(self, -1, "-20", pos = (450, 50))
-        labelMaxY = wx.StaticText(self, -1, "Max Y", pos = (450, 75))
-        self.textboxMaxYAxis = wx.TextCtrl(self, -1, "20", pos = (450, 95)) #outputs the analog can get
- 
-        # this goes with the labelMinY and labelMaxY
-        # it is the button that does the setting of the range when the user enters the numbers 
-        self.buttonRange = wx.Button(self, -1, "Set Y Axis", pos = (450, 120))
-        self.buttonRange.Bind(wx.EVT_BUTTON, self.SetButtonRange)
- 
         # to run something over and over and allows the front panel to update each iteration
         self.timer = wx.Timer(self)
         self.Bind(wx.EVT_TIMER, self.TimeInterval, self.timer)
@@ -88,8 +71,8 @@ class BottomPanel(wx.Panel):
         self.x = np.append(self.x, self.x_counter)
         self.x_counter += 1
  
-        Theader = ["Time"]
-        Pheader = ["Position"]
+        Theader = ["Time[ds]"]
+        Pheader = ["Force[kg]"]
  
     
         csv_file = open("data.csv", "w") # set where the file is saved
@@ -140,56 +123,28 @@ class BottomPanel(wx.Panel):
         except:
             print()    
         
-    # when the start button is clicked
+    # What happens when the "Start" button is pressed on the interface
     def OnStartClick(self, event):
-        # gets the raw ports that are returned
-        # a list of the USB to serial devices that are connected to the computer
-        def get_ports():
-            ports = serial.tools.list_ports.comports()
-            return ports #returns the list of the ports connected
- 
         
-        # seeks out the Arduino and what port it is connected to
-        def findArduino(portsFound):
-            commPort = 'None' #when nothing is connected/it can't find it
-            numConnection = len(portsFound) #returns the length of the list from that is returned from the get_ports function
- 
-            #iterates through the list of ports
-            for i in range(0, numConnection):
-                port = foundPorts[i] #finds the port
-                strPort = str(port) #converts that port to a string
- 
-                # the term Arduino can be used to identify what port it is at
-                if 'Arduino' in strPort:
-                    splitPort = strPort.split(' ') #split the string by spaces 
-                    commPort = (splitPort[0]) #returns what comport it is in
- 
-            return commPort
-        
+        # Toggle start/stop button (If you press "start", the button now changes to say "stop")
         val = self.togglebuttonStart.GetValue()
-        foundPorts = get_ports()  
-        connectPort = findArduino(foundPorts)
- 
         if (val == True):
             self.togglebuttonStart.SetLabel("Stop") # when the button is pressed
             self.timer.Start(int(self.textboxSampleTime.GetValue())) # in milliseconds
         else:
             self.togglebuttonStart.SetLabel("Start") # when the button is unpressed
             self.timer.Stop()
-    
- 
-        # getting the arduino to work with the code
+
+        # Connecting to bluetooth arduino
         if (self.serial_connection == False):
-            try:
-                # connecting the arduino to the code
-                addr = "34:86:5D:FD:D8:1A"
-                self.serial_arduino = bluetooth.BluetoothSocket(bluetooth.RFCOMM) # have the axes the '/dev/cu.usbmodem1411301' to what ever the Arduino is connected to on that specific machine
-                self.serial_arduino.connect((addr, 1))  
-                self.serial_connection = True
-            except bluetooth.BluetoothError as e:
+            addr = "34:86:5D:FD:D8:1A"
+            self.serial_arduino = bluetooth.BluetoothSocket(bluetooth.RFCOMM) # have the axes the '/dev/cu.usbmodem1411301' to what ever the Arduino is connected to on that specific machine
+            self.serial_arduino.connect((addr, 1))  
+            self.serial_connection = True
+            if bluetooth.BluetoothError:
                 print("Problem connecting to Arduino")
  
-        
+ 
 class Main(wx.Frame):
     def __init__(self): #constructor
         wx.Frame.__init__(self, parent = None, title = "Arudino Data", size =(600,700)) #laying out the frame of the application
