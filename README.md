@@ -1,14 +1,17 @@
 # Instrumented_Walking_Pole
-Walking Stick Bluetooth Serial Reader 
-This combination of Arduino and python code reads data from the walking stick’s loadcell via Bluetooth and plots that data in real time. Following data collection, data can be exported as a csv. DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
-Step 1: Install Arduino IDE on your device.
-An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.
-•	Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).
-o	Make sure to download the IDE corresponding with your operating system.
- 
+
+This combination of Arduino and python code reads data from an instrumented walking pole via Bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br /> 
+The instrumented walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br />
+DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
+
+# Step 1: Install Arduino IDE on your device.
+An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
+- Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
+- Make sure to download the IDE corresponding with your operating system.
+![](images/SOP_1.png) 
 Figure 1 – Arduino Website
 
-Step 2: Input Board Manager URL in Arduino IDE
+# Step 2: Input Board Manager URL in Arduino IDE
 This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found here. In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board. 
 •	In the Arduino IDE, go to File -> Preferences.
  
@@ -21,7 +24,8 @@ Figure 2 – Arduino IDE Preferences
  
 Figure 3 – Adding multiple board manager URLs
 •	Press OK when you are finished. 
-Step 3: Install Board Manager for ESP32
+
+# Step 3: Install Board Manager for ESP32
 •	Select the “tools” tab on the top toolbar of the Arduino IDE and navigate to “Board” -> “Boards Manager” (Figure 4).
  
 Figure 4 – Navigating to “Boards Manager”
@@ -32,7 +36,7 @@ Figure 5 – Downloading the board module for the esp32
 •	At this point, you should be able to navigate back to your boards and find the ESP-32-WROOM-DA Module, which you should now select (Figure 6). 
  
 
-Step 4: Ensure that the Arduino IDE can find the ESP32
+# Step 4: Ensure that the Arduino IDE can find the ESP32
 •	You may now connect the esp32 to your computer after you read the following warning
 o	WARNING: Do not connect the esp32 to your computer if it is also connected to a battery! This can fatally harm your computer. Disconnect the battery from the esp32 before connecting to your computer. 
 •	From the sketch screen of the Arduino IDE, select the “Select Board” drop-down and select “Select other board and port…”
@@ -48,14 +52,14 @@ o	Right click on the device in “other devices” in your device manager and se
 o	Allow your computer to automatically find the driver or manually navigate to it on your desktop.
 o	Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
 
-Step 5: Upload Arduino Code to the esp32
+# Step 5: Upload Arduino Code to the esp32
 •	Open the WalkingStick_ESP_BT code in the Arduino IDE
 •	Ensure that you still have the correct board and port connected (see above)
 •	Verify the code by selecting the checkmark on the top left of the screen. 
 •	Once verification is complete, upload the code to the board by selecting the arrow on the top left of the screen. This may take a minute or two.
 •	Once the code has successfully uploaded, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
-Step 6: Install Python
+# Step 6: Install Python
 •	Download the installer for python 3.10.9 for your operating system here (scroll to bottom of the page to find installers)
 o	A later version of python may work, but 3.10.9 has proven to be the most successful.
 •	Before proceeding with the install, make sure you add python to your path (Figure 8). 
@@ -63,13 +67,14 @@ o	A later version of python may work, but 3.10.9 has proven to be the most succe
 Figure 8 – Installing Python
 •	You can now follow the recommended installation by selecting “install now.”
 
-Step 7: Verify Python is Working
+# Step 7: Verify Python is Working
 •	First verify that python is running on your computer by going to your command prompt or terminal and entering “python --version”. You should see the desired response in Figure 9.
 o	For windows, type “cmd” in your search bar to find the command prompt
 o	For Mac, search “terminal” in your launchpad to find the terminal
  
 Figure 9 – Checking that python is working in command prompt.
-Step 8: Install Necessary Packages
+
+# Step 8: Install Necessary Packages
 There are 2 ways this can be done. Option 1 is recommended.
 •	Option 1: Install the necessary packages using the requirements.txt file
 o	Download the provided requirements.txt file to your computer
@@ -107,7 +112,7 @@ o	Necessary packages (enter the exact name after “pip install ____”)
 	pyserial
 	pybluez2
 
-Step 9: Run the python code
+# Step 9: Run the python code
 Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 •	Open IDLE (downloaded with python)
  
