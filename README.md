@@ -109,7 +109,7 @@ Figure 10 – Checking that python is working in command prompt.<br />
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 - Open IDLE (downloaded with python)<br /><br />
 <img src= "Images/SOP_15.png" width = "400"><br />
-- On the toolbar, select “File” -> “Open” and located your main.py file<br /><br />
+- On the toolbar, select “File” -> “Open” and locate your main.py file<br /><br />
 <img src= "Images/SOP_16.png" width = "400"><br />
 - On the toolbar, select “Run” -> “Run Module”<br /><br />
 <img src= "Images/SOP_17.png" width = "400"><br />
