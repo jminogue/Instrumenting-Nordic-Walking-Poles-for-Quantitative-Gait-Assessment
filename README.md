@@ -3,9 +3,9 @@
 This combination of Arduino and python code reads data from the walking stick’s loadcell via Bluetooth and plots that data in real time. Following data collection, data can be exported as a csv. DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 
 # Step 1: Install Arduino IDE on your device.
-An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.
-•	Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).
-o	Make sure to download the IDE corresponding with your operating system.
+An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
+- Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
+      - Make sure to download the IDE corresponding with your operating system.
  
 Figure 1 – Arduino Website
 
