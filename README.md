@@ -53,73 +53,66 @@ Figure 8 – Selecting board and port<br /><br />
   - Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
 
 # Step 5: Upload Arduino Code to the esp32
-•	Open the WalkingStick_ESP_BT code in the Arduino IDE
-•	Ensure that you still have the correct board and port connected (see above)
-•	Verify the code by selecting the checkmark on the top left of the screen. 
-•	Once verification is complete, upload the code to the board by selecting the arrow on the top left of the screen. This may take a minute or two.
-•	Once the code has successfully uploaded, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
+- Open the WalkingStick_ESP_BT code in the Arduino IDE
+- Ensure that you still have the correct board and port connected (see above)
+- Verify the code by selecting the checkmark on the top left of the screen. 
+- Once verification is complete, upload the code to the board by selecting the arrow on the top left of the screen. This may take a minute or two.
+- Once the code has successfully uploaded, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
 # Step 6: Install Python
-•	Download the installer for python 3.10.9 for your operating system here (scroll to bottom of the page to find installers)
-o	A later version of python may work, but 3.10.9 has proven to be the most successful.
-•	Before proceeding with the install, make sure you add python to your path (Figure 8). 
- 
-Figure 8 – Installing Python
-•	You can now follow the recommended installation by selecting “install now.”
+- Download the installer for python 3.10.9 for your operating system here (scroll to bottom of the page to find installers)
+  - A later version of python may work, but 3.10.9 has proven to be the most successful.
+- Before proceeding with the install, make sure you add python to your path (Figure 9).<br /><br />
+<img src= "Images/SOP_9.png" width = "500"> <br /> 
+Figure 9 – Installing Python <br /> <br />
+- You can now follow the recommended installation by selecting “install now.”
 
 # Step 7: Verify Python is Working
-•	First verify that python is running on your computer by going to your command prompt or terminal and entering “python --version”. You should see the desired response in Figure 9.
-o	For windows, type “cmd” in your search bar to find the command prompt
-o	For Mac, search “terminal” in your launchpad to find the terminal
- 
-Figure 9 – Checking that python is working in command prompt.
+- First verify that python is running on your computer by going to your command prompt or terminal and entering “python --version”. You should see the desired response in Figure 10. <br />
+  - For windows, type “cmd” in your search bar to find the command prompt
+  - For Mac, search “terminal” in your launchpad to find the terminal<br />
+
+<img src= "Images/SOP_10.png" width = "600"><br />
+Figure 10 – Checking that python is working in command prompt.<br />
 
 # Step 8: Install Necessary Packages
-There are 2 ways this can be done. Option 1 is recommended.
-•	Option 1: Install the necessary packages using the requirements.txt file
-o	Download the provided requirements.txt file to your computer
-o	Open your command prompt
-o	Access the folder that your requirements.txt file is located in command prompt using the “cd” command
-i.	For example, if the requirements.txt file is located in my downloads, I would enter the following: “cd C:\Users\johnp\downloads”
+- There are 2 ways this can be done. Option 1 is recommended.
+- Option 1: Install the necessary packages using the requirements.txt file
+  - Download the provided requirements.txt file to your computer
+  - Open your command prompt
+  - Access the folder that your requirements.txt file is located in command prompt using the “cd” command
+  - For example, if the requirements.txt file is located in my downloads, I would enter the following: “cd C:\Users\johnp\downloads”<br /><br />
+  <img src= "Images/SOP_11.png" width = "500"><br /><br />
+  - The directory should change after you press enter (see below)<br /><br />
+  <img src= "Images/SOP_12.png" width = "500"><br /><br />
+  - Now enter the command to download the requirements.txt file to import the necessary packages<br /><br />
+  <img src= "Images/SOP_13.png" width = "500"><br /><br />
+  - After pressing enter, all packages will be installed on your computer<br />
 
- 
-
-ii.	The directory should change after you press enter (see below)
-
- 
-
-iii.	Now enter the command to download the requirements.txt file to import the necessary packages
-
- 
-
-iv.	After pressing enter, all packages will be installed on your computer
-
-•	Option 2: Install the necessary packages manually in the command prompt using the “pip” command
-o	Open your command prompt
-o	You will enter “pip install _________” and press enter for each package
-
- 
-
-	You will input one package on each line
-	Ex: “pip install pyserial” then press enter
-       “pip install numpy” then press enter
-       and so on…
-o	Necessary packages (enter the exact name after “pip install ____”)
-	-U wxPython
-	matplotlib
-	numpy
-	pandas
-	pyserial
-	pybluez2
+- Option 2: Install the necessary packages manually in the command prompt using the “pip” command
+  - Open your command prompt
+  - You will enter “pip install _________” and press enter for each package <br /><br />
+  <img src= "Images/SOP_14.png" width = "500"><br /><br />
+  - You will input one package on each line
+  - Ex: “pip install pyserial” then press enter<br />
+       “pip install numpy” then press enter<br />
+       and so on…<br />
+- Necessary packages (enter the exact name after “pip install ____”)
+  - U wxPython
+  - matplotlib
+  - numpy
+  - pandas
+  - pyserial
+  - pybluez2
 
 # Step 9: Run the python code
-Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
-•	Open IDLE (downloaded with python)
- 
-
-•	On the toolbar, select “File” -> “Open” and located your Walking_Stick.py file
- 
-•	On the toolbar, select “Run” -> “Run Module”
+- Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
+- Open IDLE (downloaded with python)<br /><br />
+<img src= "Images/SOP_15.png" width = "400"><br />
+- On the toolbar, select “File” -> “Open” and located your main.py file<br /><br />
+<img src= "Images/SOP_16.png" width = "400"><br />
+- On the toolbar, select “Run” -> “Run Module”<br /><br />
+<img src= "Images/SOP_17.png" width = "400"><br />
  
 
 
