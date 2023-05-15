@@ -1,7 +1,7 @@
 # Instrumented_Walking_Pole
 
-This combination of Arduino and python code reads data from an instrumented walking pole via Bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br /> 
-The instrumented walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br />
+This combination of Arduino and Python code reads data from an instrumented walking pole via bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br /> <br />
+The instrumented walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br /><br />
 DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 
 # Step 1: Install Arduino IDE on your device.
