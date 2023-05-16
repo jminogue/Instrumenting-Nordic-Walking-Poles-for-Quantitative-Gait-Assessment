@@ -66,25 +66,22 @@ class BottomPanel(wx.Panel):
  
     # button that saves the data to a CSV file on the device 
     def OnSave(self, event):
-        tmp = self.serial_connection
-        self.y = np.append(self.y, tmp)
-        self.x = np.append(self.x, tmp)
-        self.x_counter += 1
- 
+        # Transpose the data arrays
+        x_data = self.x.reshape(-1, 1)
+        y_data = self.y.reshape(-1, 1)
+
         Theader = ["Time[ms]"]
         Pheader = ["Force[kg]"]
- 
-    
-        csv_file = open("data.csv", "w") # set where the file is saved
-        writer = csv.writer(csv_file)
-        writer.writerow(Theader)
-        writer.writerows([self.x])
-        writer.writerow(Pheader)
-        writer.writerows([self.y])
- 
+
+        with open("data.csv", "w", newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            writer.writerow(Theader + Pheader)  # Write header row
+
+            # Write the data in columns
+            for x, y in zip(x_data, y_data):
+                writer.writerow([x[0], y[0]])
+
         print("File saved!")
- 
-        csv_file.close()
  
         
         
@@ -108,7 +105,7 @@ class BottomPanel(wx.Panel):
         val = self.textboxSampleTime.GetValue()
         self.timer.Start(int(val))
 
-    # getting the serial port reading from the Arduino
+    # getting the bluetooth readings from the Arduino
     def TimeInterval(self, event):
         data = self.serial_arduino.recv(1044).decode('utf-8').rstrip()
 
@@ -163,7 +160,7 @@ class BottomPanel(wx.Panel):
             self.serial_connection = True
             print("Arduino Connected!")
             if bluetooth.BluetoothError:
-                print("Problem connecting to Arduino")
+                print()
  
  
 class Main(wx.Frame):
