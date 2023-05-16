@@ -68,10 +68,10 @@ class BottomPanel(wx.Panel):
     def OnSave(self, event):
         tmp = self.serial_connection
         self.y = np.append(self.y, tmp)
-        self.x = np.append(self.x, self.x_counter)
+        self.x = np.append(self.x, tmp)
         self.x_counter += 1
  
-        Theader = ["Time[ds]"]
+        Theader = ["Time[ms]"]
         Pheader = ["Force[kg]"]
  
     
@@ -107,21 +107,41 @@ class BottomPanel(wx.Panel):
     def OnSend(self, event):
         val = self.textboxSampleTime.GetValue()
         self.timer.Start(int(val))
- 
-    # getting the serial port reading from the arduino
+
+    # getting the serial port reading from the Arduino
     def TimeInterval(self, event):
-        tmp = self.serial_arduino.recv(1024).decode('utf-8').rstrip()
-        print(tmp)
- 
-        
-        try:
-            self.y = np.append(self.y, float(tmp))
-            self.x = np.append(self.x, self.x_counter)
-            self.x_counter += 1 # increment it so it lines up with x and y
- 
-            self.graph.draw(self.x, self.y)
-        except:
-            print()    
+        data = self.serial_arduino.recv(1044).decode('utf-8').rstrip()
+
+        # Split the received data by lines
+        lines = data.split('\r\n')
+
+        for line in lines:
+            # Skip empty lines
+            if not line:
+                continue
+
+            # Split the line by tabs
+            values = line.split('\t')
+
+            # Check if the line contains the expected number of values
+            if len(values) != 2:
+                # Handle incomplete or malformed data
+                print(f"Ignoring malformed data: {line}")
+                continue
+
+            # Extract the values
+            tmpx = values[0]
+            tmpy = values[1]
+
+            try:
+                self.y = np.append(self.y, float(tmpy))
+                self.x = np.append(self.x, float(tmpx))
+                self.x_counter += 1  # increment it so it lines up with x and y
+
+                self.graph.draw(self.x, self.y)
+            except ValueError:
+                print(f"Error converting data: {line}")
+
         
     # What happens when the "Start" button is pressed on the interface
     def OnStartClick(self, event):
@@ -138,9 +158,10 @@ class BottomPanel(wx.Panel):
         # Connecting to bluetooth arduino
         if (self.serial_connection == False):
             addr = "34:86:5D:FD:D8:1A"
-            self.serial_arduino = bluetooth.BluetoothSocket(bluetooth.RFCOMM) # have the axes the '/dev/cu.usbmodem1411301' to what ever the Arduino is connected to on that specific machine
+            self.serial_arduino = bluetooth.BluetoothSocket(bluetooth.RFCOMM) 
             self.serial_arduino.connect((addr, 1))  
             self.serial_connection = True
+            print("Arduino Connected!")
             if bluetooth.BluetoothError:
                 print("Problem connecting to Arduino")
  

@@ -1,5 +1,5 @@
 /*
- Example using the SparkFun HX711 breakout board with a scale
+ Derived from the SparkFun HX711 breakout board with a scale
  By: Nathan Seidle
  SparkFun Electronics
  Date: November 19th, 2014
@@ -53,11 +53,7 @@ void setup() {
 }
 
 void loop() {
-  
-  //Serial.print(millis()/1000.00);
-  //Serial.print("\t");
-  SerialBT.println(scale.get_units()); //scale.get_units() returns a float
-  //Serial.print(" Kilograms"); //You can change this to kg but you'll need to refactor the calibration_factor
-  //SerialBT.println("");
-   
+  float time = millis();
+  float value = scale.get_units();
+  SerialBT.println(String(time) + "\t" + String(value));
 }
