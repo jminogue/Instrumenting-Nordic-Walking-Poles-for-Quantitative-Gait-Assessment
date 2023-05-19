@@ -60,7 +60,7 @@ Figure 8 – Selecting board and port<br /><br />
 - Once the code has successfully uploaded, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
 # Step 6: Install Python
-- Download the installer for python 3.10.9 for your operating system here (https://www.python.org/downloads/)(scroll to bottom of the page to find installers)
+- Download the installer for python 3.10.9 for your operating system here (https://www.python.org/downloads/) (scroll to bottom of the page to find installers)
   - A later version of python may work, but 3.10.9 has proven to be the most successful.
 - Before proceeding with the install, make sure you add python to your path (Figure 9).<br /><br />
 <img src= "Images/SOP_Images/SOP_9.png" width = "500"> <br /> 
