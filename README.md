@@ -60,7 +60,7 @@ Figure 8 – Selecting board and port<br /><br />
 - Once you have successfully uploaded the Print_Force_BT code, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
 ## Step 6: Run the Executable File and Collect Data
-- The walkingpole_live_plot.exe file allows you to run the GUI without having to install python or any other dependencies to your computer. If you choose to use this executable, you are done.
+- The walkingpole_live_plot.exe file allows you to run the GUI without having to install python or any other dependencies to your computer. If you choose to use this executable, you are done.<br /> <br />
 
 
 # If You're Not Using the Executable...
