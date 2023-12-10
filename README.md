@@ -102,7 +102,7 @@ Install the necessary packages manually in the command prompt using the â€œpipâ€
       - During installation, make sure to select **Desktop Development with C++** and **Universal Windows Platform Development**
       - Restart your computer and try again to install pybluez
  
-## Step 10: Run the python code
+## Run the Python Code
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 - Open IDLE (downloaded with python)<br /><br />
 <img src= "Images/SOP_Images/SOP_15.png" width = "400"><br />
