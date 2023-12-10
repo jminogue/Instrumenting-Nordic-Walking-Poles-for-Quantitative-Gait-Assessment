@@ -4,7 +4,7 @@ We drilled out the middle of a nordic walking pole and replaced it with a load c
 - This combination of Arduino and Python code reads data from the walking pole via bluetooth and plots the data in real time. Timestamped data can be exported as a csv. <br />
 - We created a resin housing, secured with epoxy and screws, to attach to the pole.  <br />
 
-<br /><img src= "Images/SOP_Images/Pole.png" width = "200"> <br />
+<br /><br /> <img src= "Images/SOP_Images/Pole.png" width = "200"> <br />
 
 ### Materials:
 - [ESP32 Wroom Dev Module](https://www.amazon.com/Development-Microcontroller-Integrated-Antenna-Amplifiers/dp/B09GK74F7N/ref=sr_1_1_sspa?adgrpid=1335907260628949&hvadid=83494414425840&hvbmt=be&hvdev=c&hvlocphy=99507&hvnetw=o&hvqmt=e&hvtargid=kwd-83494609850672%3Aloc-190&hydadcr=24332_13514996&keywords=esp32+dev+module&qid=1702242786&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
