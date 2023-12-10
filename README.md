@@ -53,13 +53,16 @@ Figure 8 – Selecting board and port<br /><br />
   - Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
 
 # Step 5: Upload Arduino Code to the esp32
-- Open the WalkingStick_ESP_BT code in the Arduino IDE
-- Ensure that you still have the correct board and port connected (see above)
-- Verify the code by selecting the checkmark on the top left of the screen. 
-- Once verification is complete, upload the code to the board by selecting the arrow on the top left of the screen. This may take a minute or two.
-- Once the code has successfully uploaded, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
+- The "Arduino Code" folder in this repository contains the following 3 scripts:
+   - LoadCellCalibration: This sketch will help you identify the calibration factor for your load cell.
+   - Print_Force_Serial: This sketch will print force readings to the serial monitor in the Arduino IDE. You can use this sketch to check your output values from the ESP32.
+   - Print_Force_BT: This sketch will print force readings via bluetooth. This is the code you need to run the  Python interface that reads force via bluetooth. 
+- Once you have successfully uploaded the Print_Force_BT code, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
 # Step 6: Install Python
+- The walkingpole_live_plot.exe file allows you to run the GUI without having to install python or any other dependencies to your computer. If you choose to use this executable, you are done.
+
+# Step 7: Install Python
 - Download the installer for python 3.10.9 for your operating system here (https://www.python.org/downloads/) (scroll to bottom of the page to find installers)
   - A later version of python may work, but 3.10.9 has proven to be the most successful.
 - Before proceeding with the install, make sure you add python to your path (Figure 9).<br /><br />
@@ -67,7 +70,7 @@ Figure 8 – Selecting board and port<br /><br />
 Figure 9 – Installing Python <br /> <br />
 - You can now follow the recommended installation by selecting “install now.”
 
-# Step 7: Verify Python is Working
+# Step 8: Verify Python is Working
 - First verify that python is running on your computer by going to your command prompt or terminal and entering “python --version”. You should see the desired response in Figure 10. <br />
   - For windows, type “cmd” in your search bar to find the command prompt
   - For Mac, search “terminal” in your launchpad to find the terminal<br />
@@ -75,7 +78,7 @@ Figure 9 – Installing Python <br /> <br />
 <img src= "Images/SOP_Images/SOP_10.png" width = "600"><br />
 Figure 10 – Checking that python is working in command prompt.<br />
 
-# Step 8: Install Necessary Packages
+# Step 9: Install Necessary Packages
 - There are 2 ways this can be done. Option 1 is recommended.
 - Option 1: Install the necessary packages using the requirements.txt file
   - Download the provided requirements.txt file to your computer
@@ -105,7 +108,7 @@ Figure 10 – Checking that python is working in command prompt.<br />
   - pyserial
   - pybluez2
 
-# Step 9: Run the python code
+# Step 10: Run the python code
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 - Open IDLE (downloaded with python)<br /><br />
 <img src= "Images/SOP_Images/SOP_15.png" width = "400"><br />
