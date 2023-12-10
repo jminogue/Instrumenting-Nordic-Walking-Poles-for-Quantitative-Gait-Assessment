@@ -81,8 +81,8 @@ Install the necessary packages manually in the command prompt using the â€œpipâ€
   - sys
   - csv
   - pybluez
-    - pybluez requires Microsoft C++ Build Tools in order to run (https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-    - During installation, make sure to select Desktop development with C++ and Universal Windows Platform development:
+    - pybluez requires Microsoft C++ Build Tools in order to run, which you can install at the following link: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    - During installation, make sure to select **Desktop Development with C++** and **Universal Windows Platform development**
  
 ## Step 10: Run the python code
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
