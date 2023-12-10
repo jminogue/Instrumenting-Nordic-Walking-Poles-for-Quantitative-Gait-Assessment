@@ -72,12 +72,8 @@ Figure 9 – Installing Python <br /> <br />
 ## Install Necessary Packages
 Install the necessary packages manually in the command prompt using the “pip” command
   - Open your command prompt
-  - You will enter “pip install _________” and press enter for each package <br /><br />
+  - Enter “pip install _________” for each package <br /><br />
   <img src= "Images/SOP_Images/SOP_14.png" width = "500"><br /><br />
-  - You will input one package on each line
-  - Ex: “pip install pandas” then press enter<br />
-       “pip install numpy” then press enter<br />
-       and so on…<br />
 - Necessary packages (enter the exact name after “pip install ____”)
   - wxPython
   - matplotlib
@@ -85,8 +81,9 @@ Install the necessary packages manually in the command prompt using the “pip�
   - sys
   - csv
   - pybluez
+    - pybluez requires Microsoft C++ Build Tools in order to run (https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+    - During installation, make sure to select Desktop development with C++ and Universal Windows Platform development:
  
-
 ## Step 10: Run the python code
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 - Open IDLE (downloaded with python)<br /><br />
