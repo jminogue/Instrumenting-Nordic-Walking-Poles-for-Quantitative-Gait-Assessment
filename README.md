@@ -1,6 +1,9 @@
 # Walking_Pole
 
-We drilled out the middle of a nordic walking pole and replaced it with a load cell. This combination of Arduino and Python code reads data from the walking pole via bluetooth and plots the data in real time. Timestamped data can be exported as a csv. <br />
+We drilled out the middle of a nordic walking pole and replaced it with a load cell. 
+- This combination of Arduino and Python code reads data from the walking pole via bluetooth and plots the data in real time. Timestamped data can be exported as a csv. <br />
+- We created a resin housing, secured with epoxy and screws 
+
 
 <img src= "Images/SOP_Images/Pole.png" width = "500"> <br />
 
