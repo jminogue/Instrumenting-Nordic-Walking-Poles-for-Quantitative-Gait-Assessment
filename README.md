@@ -70,7 +70,7 @@ Figure 8 – Selecting board and port<br /><br />
 
 ## Step 5: Upload Arduino Code to the esp32
 - The "Arduino Code" folder in this repository contains the following 3 scripts:
-   - LoadCellCalibration: This sketch will help you identify the calibration factor for your load cell. More information can be found at this [link[ (https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all) under *Installing the HX711 Arduino Library and Examples*
+   - LoadCellCalibration: This sketch will help you identify the calibration factor for your load cell. More information can be found at this [link](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all) under *Installing the HX711 Arduino Library and Examples*
    - Print_Force_Serial: This sketch will print force readings to the serial monitor in the Arduino IDE. You can use this sketch to check your output values from the ESP32.
    - Print_Force_BT: This sketch will print force readings via bluetooth. This is the code you need to run the  Python interface that reads force via bluetooth. 
 - Once you have successfully uploaded the Print_Force_BT code, you may disconnect the ESP32 from your computer and reconnect it to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
