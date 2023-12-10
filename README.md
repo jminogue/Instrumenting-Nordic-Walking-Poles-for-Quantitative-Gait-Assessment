@@ -8,6 +8,8 @@ We drilled out the middle of a nordic walking pole and replaced it with a button
 - [Nordic Walking Pole](https://bafxpro.com/products/hikingpoles)
 - [Load Cell](https://caltsensor.com/product/inline-load-cells-dymh-103/)
 - [HX711 Load Cell Amplifier](https://www.sparkfun.com/products/13879)
+- [Small Breadboards](https://www.amazon.com/HiLetgo-SYB-170-Breadboard-Colorful-Plates/dp/B071KCZZ4K/ref=sr_1_2_sspa?adgrpid=1333708840092947&hvadid=83357000896351&hvbmt=be&hvdev=c&hvlocphy=99507&hvnetw=o&hvqmt=e&hvtargid=kwd-83357641838384%3Aloc-190&hydadcr=953_1014987051&keywords=small+breadboards&qid=1702243778&s=industrial&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
+- 
 
 DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 
