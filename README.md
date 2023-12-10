@@ -1,11 +1,11 @@
 # Walking_Pole
 
-This combination of Arduino and Python code reads data from an instrumented walking pole via bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br /> <br />
-The instrumented walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br /><br />
+This combination of Arduino and Python code reads data from an instrumenting walking pole via bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br /> <br />
+The instrumenting walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 WROOM DA module microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br /><br />
 DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 
 # Step 1: Install Arduino IDE on your device.
-An IDE is an Integrated Development Environment. This is basically the application where you write code in. This IDE is for uploading code to the Arduino microcontroller used for the walking pole.<br />
+An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
 - Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
 - Make sure to download the IDE corresponding with your operating system.<br /><br />
 <img src= "Images/SOP_Images/SOP_1.png" width = "500"> <br />
