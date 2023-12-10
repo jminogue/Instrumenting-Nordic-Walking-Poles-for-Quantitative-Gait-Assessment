@@ -28,7 +28,7 @@ An IDE is an Integrated Development Environment. This is the application where y
 Figure 1 – Arduino Website
 
 ## Step 2: Input Board Manager URL in Arduino IDE
-This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found here (https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/). In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board.<br />
+This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found [here](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/). In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board.<br />
 - In the Arduino IDE, go to File -> Preferences.<br />
  
 - In the “Additional boards manager URLs” text box (Figure 2), paste in the following link:
