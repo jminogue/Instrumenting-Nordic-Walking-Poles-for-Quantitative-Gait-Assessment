@@ -12,7 +12,7 @@ We drilled out the middle of a nordic walking pole and replaced it with a button
 - [9 Volt Battery](https://www.amazon.com/Amazon-Basics-Performance-All-Purpose-Batteries/dp/B00MH4QM1S/ref=sr_1_1_ffob_sspa?crid=K1BZ4V4UTB2Y&keywords=9v+battery&qid=1702244141&rdc=1&sprefix=9v+battery%2Caps%2C79&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
 - [Buck Converter](https://www.adafruit.com/product/4683)
 
-DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
+ <br /> DO NOT CONNECT THE WALKING POLE TO YOUR COMPUTER IF THE 9V BATTERY IS CONNECTED AND TURNED ON
 
 ## Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
