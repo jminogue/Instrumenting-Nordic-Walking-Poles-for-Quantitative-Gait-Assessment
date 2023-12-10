@@ -22,7 +22,7 @@ We drilled out the middle of a nordic walking pole and replaced it with a load c
 
 ## Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
-- Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
+- Visit [Arduino’s Website](https://www.arduino.cc/en/software) and download the latest version of the Arduino IDE (Figure 1).<br />
 - Make sure to download the IDE corresponding with your operating system.<br /><br />
 <img src= "Images/SOP_Images/SOP_1.png" width = "500"> <br />
 Figure 1 – Arduino Website
