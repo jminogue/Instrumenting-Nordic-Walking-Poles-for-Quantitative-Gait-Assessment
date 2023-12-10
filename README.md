@@ -11,7 +11,7 @@ An IDE is an Integrated Development Environment. This is the application where y
 <img src= "Images/SOP_Images/SOP_1.png" width = "500"> <br />
 Figure 1 – Arduino Website
 
-# Step 2: Input Board Manager URL in Arduino IDE
+## Step 2: Input Board Manager URL in Arduino IDE
 This project uses a microcontroller called the ESP32-WROOM-DA Module. We have decided to use this board because of its fast processor, low cost, and its ability to stream data via Bluetooth. A quick tutorial on this board can be found here (https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino-ide/). In order to use this microcontroller with the Arduino IDE, we need to first put a link in the IDE telling it where to find the “board manager” for this specific board.<br />
 - In the Arduino IDE, go to File -> Preferences.<br />
  
@@ -24,7 +24,7 @@ Figure 2 – Arduino IDE Preferences <br /> <br />
 Figure 3 – Adding multiple board manager URLs <br />
 - Press OK when you are finished. 
 
-# Step 3: Install Board Manager for ESP32
+## Step 3: Install Board Manager for ESP32
 - Select the “tools” tab on the top toolbar of the Arduino IDE and navigate to “Board” -> “Boards Manager” (Figure 4).<br /> <br />
 <img src= "Images/SOP_Images/SOP_4.png" width = "500"> <br />
 Figure 4 – Navigating to “Boards Manager”<br /> 
@@ -36,7 +36,7 @@ Figure 5 – Downloading the board module for the esp32<br />
 <img src= "Images/SOP_Images/SOP_6.png" width = "500"> <br />
 Figure 6 – Selecting the ESP32 from Boards Manager <br /> 
 
-# Step 4: Ensure that the Arduino IDE can find the ESP32
+## Step 4: Ensure that the Arduino IDE can find the ESP32
 - You may now connect the esp32 to your computer after you read the following warning
 - WARNING: Do not connect the esp32 to your computer if it is also connected to a battery! This can fatally harm your computer. Disconnect the battery from the esp32 before connecting to your computer. 
 - From the sketch screen of the Arduino IDE, select the “Select Board” drop-down and select “Select other board and port…” (Figure 7)<br /><br /> 
@@ -52,33 +52,23 @@ Figure 8 – Selecting board and port<br /><br />
   - Allow your computer to automatically find the driver or manually navigate to it on your desktop.
   - Now, your computer should be able to recognize your esp32 and list your available ports. Select the port that your esp32 is connected to
 
-# Step 5: Upload Arduino Code to the esp32
+## Step 5: Upload Arduino Code to the esp32
 - The "Arduino Code" folder in this repository contains the following 3 scripts:
    - LoadCellCalibration: This sketch will help you identify the calibration factor for your load cell.
    - Print_Force_Serial: This sketch will print force readings to the serial monitor in the Arduino IDE. You can use this sketch to check your output values from the ESP32.
    - Print_Force_BT: This sketch will print force readings via bluetooth. This is the code you need to run the  Python interface that reads force via bluetooth. 
 - Once you have successfully uploaded the Print_Force_BT code, you may disconnect your computer from the Arduino and reconnect the Arduino to its battery. It is very important that you do not connect to the battery until AFTER you have disconnected from your computer. It is okay if the Arduino loses power during this switch. The code has now been uploaded to the board and the board will remember the code when it reconnects to a power source. 
 
-# Step 6: Run the Executable File and Collect Data
+## Step 6: Run the Executable File and Collect Data
 - The walkingpole_live_plot.exe file allows you to run the GUI without having to install python or any other dependencies to your computer. If you choose to use this executable, you are done.
 
-# Step 7: Install Python
-- Download the installer for python 3.10.9 for your operating system here (https://www.python.org/downloads/) (scroll to bottom of the page to find installers)
-  - A later version of python may work, but 3.10.9 has proven to be the most successful.
+# If Not Using the Executable...
+- If you haven't already, install Python (https://www.python.org/downloads/) (scroll to bottom of the page to find installers)
 - Before proceeding with the install, make sure you add python to your path (Figure 9).<br /><br />
 <img src= "Images/SOP_Images/SOP_9.png" width = "500"> <br /> 
 Figure 9 – Installing Python <br /> <br />
-- You can now follow the recommended installation by selecting “install now.”
 
-# Step 8: Verify Python is Working
-- First verify that python is running on your computer by going to your command prompt or terminal and entering “python --version”. You should see the desired response in Figure 10. <br />
-  - For windows, type “cmd” in your search bar to find the command prompt
-  - For Mac, search “terminal” in your launchpad to find the terminal<br />
-
-<img src= "Images/SOP_Images/SOP_10.png" width = "600"><br />
-Figure 10 – Checking that python is working in command prompt.<br />
-
-# Step 9: Install Necessary Packages
+## Install Necessary Packages
 Install the necessary packages manually in the command prompt using the “pip” command
   - Open your command prompt
   - You will enter “pip install _________” and press enter for each package <br /><br />
@@ -96,7 +86,7 @@ Install the necessary packages manually in the command prompt using the “pip�
   - pybluez
  
 
-# Step 10: Run the python code
+## Step 10: Run the python code
 - Ensuring the Arduino code has been uploaded to the walking stick and that the stick is on and connected to battery power, you can finally run the python code!
 - Open IDLE (downloaded with python)<br /><br />
 <img src= "Images/SOP_Images/SOP_15.png" width = "400"><br />
