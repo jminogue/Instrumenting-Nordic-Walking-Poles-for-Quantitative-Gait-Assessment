@@ -1,6 +1,6 @@
 # Walking_Pole
 
-This combination of Arduino and Python code reads data from an instrumenting walking pole via bluetooth and plots the data in real time. Following data collection, data can be exported as a csv.<br />
+This combination of Arduino and Python code reads data from an instrumenting walking pole via bluetooth and plots the data in real time. Data can be exported as a csv.<br />
 We drilled out the middle of a nordic walking pole and replaced it with a button load cell <br />
 
 ### Materials:
