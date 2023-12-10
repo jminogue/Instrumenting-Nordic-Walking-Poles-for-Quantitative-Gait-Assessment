@@ -2,7 +2,7 @@
 
 We drilled out the middle of a nordic walking pole and replaced it with a load cell. 
 - This combination of Arduino and Python code reads data from the walking pole via bluetooth and plots the data in real time. Timestamped data can be exported as a csv. <br />
-- We created a resin housing, secured with epoxy and screws, to attach to the pole.  <br />
+- We created a resin housing, secured with epoxy and screws, to attach to the pole.  <br /> <br />
 
    <img src= "Images/SOP_Images/Pole.png" width = "200"> <br />
 
