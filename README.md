@@ -62,7 +62,8 @@ Figure 8 – Selecting board and port<br /><br />
 ## Step 6: Run the Executable File and Collect Data
 - The walkingpole_live_plot.exe file allows you to run the GUI without having to install python or any other dependencies to your computer. If you choose to use this executable, you are done.
 
-# If Not Using the Executable...
+
+# If You're Not Using the Executable...
 - If you haven't already, install Python (https://www.python.org/downloads/) (scroll to bottom of the page to find installers)
 - Before proceeding with the install, make sure you add python to your path (Figure 9).<br /><br />
 <img src= "Images/SOP_Images/SOP_9.png" width = "500"> <br /> 
