@@ -4,7 +4,7 @@ This combination of Arduino and Python code reads data from an instrumenting wal
 The instrumenting walking pole is drilled in the middle and connected to a loadcell. The loadcell is connected to a circuit using an ESP32 WROOM DA module microcontroller, an HX711 loadcell amplifier, and a 9V battery.<br /><br />
 DO NOT CONNECT ANYTHING TO YOUR COMPUTER UNTIL YOU ARE INSTRUCTED TO DO SO!
 
-# Step 1: Install Arduino IDE on your device.
+## Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
 - Visit Arduino’s Website and download the latest version of the Arduino IDE (Figure 1).<br />
 - Make sure to download the IDE corresponding with your operating system.<br /><br />
