@@ -11,7 +11,7 @@ BluetoothSerial SerialBT;
 #error Serial Bluetooth not available or not enabled. It is only available for the ESP32 chip.
 #endif
 
-#define calibration_factor 21000 //This value is obtained using the SparkFun_HX711_Calibration sketch
+#define calibration_factor 22000 //This value is obtained using the SparkFun_HX711_Calibration sketch
 #define DOUT  5
 #define CLK  4
 
@@ -24,6 +24,7 @@ void setup() {
   scale.set_scale();
   scale.tare(); //Reset the scale to 0
   scale.set_scale(calibration_factor); //Adjust to this calibration factor
+  scale.tare(); //Reset the scale to 0
 }
 
 void loop() {
