@@ -12,7 +12,7 @@ We drilled out the middle of a nordic walking pole and replaced it with a load c
 - [Load Cell](https://caltsensor.com/product/inline-load-cells-dymh-103/)
 - [HX711 Load Cell Amplifier](https://www.sparkfun.com/products/13879)
 - [Small Breadboards](https://www.amazon.com/HiLetgo-SYB-170-Breadboard-Colorful-Plates/dp/B071KCZZ4K/ref=sr_1_2_sspa?adgrpid=1333708840092947&hvadid=83357000896351&hvbmt=be&hvdev=c&hvlocphy=99507&hvnetw=o&hvqmt=e&hvtargid=kwd-83357641838384%3Aloc-190&hydadcr=953_1014987051&keywords=small+breadboards&qid=1702243778&s=industrial&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
-- [9 Volt Battery Holder](https://www.amazon.com/Battery-Leads%EF%BC%8CWidely-Student-Experiments-Batteries/dp/B09XBKT1DG/ref=sr_1_7_sspa?keywords=9v%2Bbattery%2Bclip&qid=1702244060&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1) - This will allow you to turn the battery on and off with the switch on the holder
+- [9 Volt Battery Holder](https://www.amazon.com/Battery-Leads%EF%BC%8CWidely-Student-Experiments-Batteries/dp/B09XBKT1DG/ref=sr_1_7_sspa?keywords=9v%2Bbattery%2Bclip&qid=1702244060&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1) - This will allow you to turn the battery on or off with a switch. 
 - [9 Volt Battery](https://www.amazon.com/Amazon-Basics-Performance-All-Purpose-Batteries/dp/B00MH4QM1S/ref=sr_1_1_ffob_sspa?crid=K1BZ4V4UTB2Y&keywords=9v+battery&qid=1702244141&rdc=1&sprefix=9v+battery%2Caps%2C79&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
 - [Buck Converter](https://www.adafruit.com/product/4683)
 - [Jumper Wires](https://makeradvisor.com/tools/jumper-wires-kit-120-pieces/)
