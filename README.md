@@ -21,10 +21,10 @@ We drilled out the middle of a nordic walking pole and replaced it with a load c
  <br /> DO NOT CONNECT THE WALKING POLE TO YOUR COMPUTER IF THE 9V BATTERY IS CONNECTED AND TURNED ON.
 
 ### Circuit:
-Circuit With Buck Converter
+Circuit With Buck Converter <br />
 <img src= "Images/SOP_Images/Schematic with Buck Converter.png" width = "500"> <br /> <br />
 
-Circuit Without Buck Converter
+Circuit Without Buck Converter <br />
 <img src= "Images/SOP_Images/Schematic without Buck Converter.png" width = "500"> <br /> <br />
 
 #### The purpose of the buck converter is to step down the 9V battery to 3.3V, which is what the ESP-32 is designed to handle. The ESP-32 could be damaged or experience instability if 9V is supplied directly to it. 
