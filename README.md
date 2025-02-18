@@ -27,11 +27,12 @@ Circuit With Buck Converter
 Circuit Without Buck Converter
 <img src= "Images/SOP_Images/Schematic without Buck Converter.png" width = "500"> <br /> <br />
 
-<br /> The purpose of the buck converter is to step down the 9V battery to 3.3V, which is what the ESP-32 is designed to handle. The ESP-32 could be damaged or experience instability if 9V is supplied directly to it. 
+<br />
+#### The purpose of the buck converter is to step down the 9V battery to 3.3V, which is what the ESP-32 is designed to handle. The ESP-32 could be damaged or experience instability if 9V is supplied directly to it. 
 
-Notice that with the buck converter setup, the battery is wired to the 3.3V pin on the ESP-32, because the voltage is properly stepped down. Without the buck converter, the battery is wired to the Vin pin on the ESP-32. This Vin pin is supposed to regulate the voltage on its own, so you can technically connect a 9V battery directly to it. However, this will waste power as heat, making the circuit less efficient (battery will die faster). 
+#### Notice that with the buck converter setup, the battery is wired to the 3.3V pin on the ESP-32, because the voltage is properly stepped down. Without the buck converter, the battery is wired to the Vin pin on the ESP-32. This Vin pin is supposed to regulate the voltage on its own, so you can technically connect a 9V battery directly to it. However, this will waste power as heat, making the circuit less efficient (battery will die faster). 
 
-The setup with the buck converter will make the circuit work more efficiently, but either setup should work.
+#### The setup with the buck converter will make the circuit work more efficiently, but either setup should work.
 
 ## Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
