@@ -21,8 +21,11 @@ We drilled out the middle of a nordic walking pole and replaced it with a load c
  <br /> DO NOT CONNECT THE WALKING POLE TO YOUR COMPUTER IF THE 9V BATTERY IS CONNECTED AND TURNED ON.
 
 ### Circuit:
+<img src= "Images/SOP_Images/Schematic with Buck Converter.png" width = "500"> <br />
+Circuit With Buck Converter
 
-
+<img src= "Images/SOP_Images/Schematic without Buck Converter.png" width = "500"> <br />
+Circuit Without Buck Converter
 
 ## Step 1: Install Arduino IDE on your device.
 An IDE is an Integrated Development Environment. This is the application where you write code. This IDE is for uploading code to Arduino microcontrollers.<br />
